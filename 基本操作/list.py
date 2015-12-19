@@ -1,10 +1,8 @@
 a = [10, 20, 30, 40]
 a = [10, 'ABC']
 
-# listの要素にアクセス
-a = [1, 2, 3, 4, 5]
-for n in a:
-  print n
+# initialize
+l = [0] * 3     # l = [0, 0, 0]
 
 a[0]   # index
 
@@ -18,7 +16,6 @@ b2 = a[-2]      # : 8
 
 
 ## リストの内包表記
-# リストの内包表記 を用いることで、map(), filter(), lambda を使用しないで簡単なリスト演算を行うことができます。
 a = [1, 2, 3]
 print [x * 2 for x in a]                        #=> [2, 4, 6]
 print [x * 2 for x in a if x == 3]              #=> [6]
