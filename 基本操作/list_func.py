@@ -31,3 +31,7 @@ a.remove(13)               # 引数のオブジェクトのうちリストの先
 # sort
 a.sort()   # destructive
 sorted(a)  # not destructive
+
+# 要素 e が含まれているかどうか
+e in listname   # => True or False
+e not in listname  # 含まれていないとTrue
