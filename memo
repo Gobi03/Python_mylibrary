@@ -4,5 +4,5 @@ $ python3 test.py  #プログラムの実行
 # coding: utf-8              # エンコードルールの記述（日本語使えるようになる）
 # -*- coding: utf-8 -*-      # emacsとの互換性を考えた版
 
-$ pip install some-package-name  // pipでパッケージをインストール
+$ pip3 install some-package-name  // pipでパッケージをインストール
 

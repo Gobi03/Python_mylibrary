@@ -1,0 +1,4 @@
+１．exeファイルに変換したいファイルの名前をmain.pyにする
+２．setup.pyを同じディレクトリに入れる
+３．$ python setup.py build
+４．buildディレクトリ内にexeファイルできてる

@@ -3,13 +3,13 @@
 # append
 [1, 2, 3].extend([4, 5, 6])   # destructive
 [1, 2, 3] + [4, 5, 6]        # destructive
-
 # length
 len([1, 2, 3])           #=> 3
 # map
-a = [1, 2, 3]
-a.map(lambda x: x * 2, a)    # destructive
-[map(lambda x: x * 2, a)]       # not destructive
+list(map(f, a))       # not destructive
+                      # a = [1, 2, 3], f = lambda x: x * 2
+
+# 内包表記
 [x * 2 for x in a]            #=> [2, 4, 6] : 内包表記
 # filter
 a = [1, 2, 3]
