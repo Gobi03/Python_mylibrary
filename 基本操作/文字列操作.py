@@ -20,3 +20,4 @@ chr   # ascii number => char
 ==
 # isSubstring
 a in b   # if a is substring of b, return True
+
