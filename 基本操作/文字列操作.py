@@ -8,7 +8,10 @@ a[n:m:s]      # n 番目から m 番目までの文字列を s個とばしで取
 
 a[::-1]       # reverse (a[n:m:s]の亜種)
 
-# 変換
+# 書き換え
+StringOverwrite.py使う
+
+# 型変換
 ord   # char => ascii number
 chr   # ascii number => char
 "".join(char_list)   # char_listをstringに変換
