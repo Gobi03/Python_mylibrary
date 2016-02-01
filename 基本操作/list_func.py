@@ -8,6 +8,8 @@ len([1, 2, 3])           #=> 3
 # map
 list(map(f, a))       # not destructive
                       # a = [1, 2, 3], f = lambda x: x * 2
+# delete
+del a[i]    # i番目の要素を削除
 
 # 内包表記
 [x * 2 for x in a]            #=> [2, 4, 6] : 内包表記
