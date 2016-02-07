@@ -24,3 +24,4 @@ chr   # ascii number => char
 # isSubstring
 a in b   # if a is substring of b, return True
 
+split(",")  # 引数でsplit
