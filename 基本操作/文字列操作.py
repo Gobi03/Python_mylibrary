@@ -25,3 +25,7 @@ chr   # ascii number => char
 a in b   # if a is substring of b, return True
 
 split(",")  # 引数でsplit
+
+# 文字列を大文字/小文字に変換する
+文字列.upper()
+文字列.lower()
