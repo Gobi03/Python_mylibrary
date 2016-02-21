@@ -1,5 +1,6 @@
-int(3.5)    # cast
-
 sum(range(n+1))   # 1 ~ n の
-range(n)  # 0 ~ n-1
-range(3, n) # 3 ~ n-1
+
+
+round(answer, 3)   # 四捨五入 小数点第3位まで表示
+math.floor(answer) # 切り捨て
+math.ceil(answer)  # 切り上げ
