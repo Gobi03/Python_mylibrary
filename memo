@@ -6,3 +6,7 @@ $ python3 test.py  #プログラムの実行
 
 $ pip3 install some-package-name  // pipでパッケージをインストール
 
+
+python-modeインデント調整(全選択からまとめてできる)
+C-c >
+C-c <
