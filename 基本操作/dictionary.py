@@ -6,6 +6,16 @@ d1 = d['Yamada']
 d2 = d['Suzuki']
 d3 = d['Tanaka']
 
+# cons
+if キー not in 辞書オブジェクト:
+	d[キー] = value
+# append
+d.update(連結する辞書オブジェクト)
+
+
+
+
+
 # 全ての要素や値を参照するには、items(), keys(), valus(), iteritems() を使用します。参照される要素の順序は順不同です。
 d = {'Yamada': 30, 'Suzuki': 40, 'Tanaka': 80}
 
