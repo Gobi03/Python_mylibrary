@@ -8,9 +8,9 @@ def binarySearch(small, big):
 			return small
 	else:
 		if isWell(mid):
-			binarySearch(mid, big)
+			return binarySearch(mid, big)
 		else:
-			binarySearch(small, mid)
+			return binarySearch(small, mid)
 
 # 最小値を返す
 def binarySearch(small, big):
@@ -22,6 +22,6 @@ def binarySearch(small, big):
 			return big
 	else:
 		if isWell(mid):
-			binarySearch(small, mid)
+			return binarySearch(small, mid)
 		else:
-			binarySearch(mid, big)
+			return binarySearch(mid, big)
