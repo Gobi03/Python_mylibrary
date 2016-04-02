@@ -2,7 +2,7 @@
 [1, 2, 3].append(4)         # destructive
 # append
 [1, 2, 3].extend([4, 5, 6])   # destructive
-[1, 2, 3] + [4, 5, 6]        # destructive
+[1, 2, 3] + [4, 5, 6]        # not destructive
 # length
 len([1, 2, 3])           #=> 3
 # map
