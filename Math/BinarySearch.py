@@ -1,4 +1,4 @@
-# 最大値を返す
+# 条件を満たす最大の値を返す
 def binarySearch(small, big):
 	mid = (big + small) // 2
 	if big == small or big == small + 1:
@@ -12,7 +12,7 @@ def binarySearch(small, big):
 		else:
 			return binarySearch(small, mid)
 
-# 最小値を返す
+# 条件を満たす最小の値を返す
 def binarySearch(small, big):
 	mid = (big + small) // 2
 	if big == small or big == small + 1:

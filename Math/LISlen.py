@@ -1,17 +1,36 @@
+# O(n log(n))
+# A が LIS 抜き出すの長さ求めるリスト
+
 A = [2,3,1,4]  # original sequence
 
+## binary search
+# 条件を満たす最小の値を返す
+def binarySearch(l, r, ins, L):
+	mid = (l + r) // 2
+	if r == l or r == l + 1:
+		if ins < L[l]:
+			return l
+		else:
+			return r
+	else:
+		if ins < L[mid]:
+			return binarySearch(l, mid, ins, L)
+		else:
+			return binarySearch(mid, r, ins, L)
+
+
+
+## LISlen
 def LISlen():
 	L = []
 	L.append(A[0])
 	length = 1
-	Llist.append([A[0]])
+
 	for i in range(1, len(A)):
-		if L[length-1] <= A[i]:  # 末端の要素より大きかったら
+		if A[i] >= L[length-1]:  # 末端の要素より大きかったら
 			L.append(A[i])
 			length += 1
-		else:
-			for k in range(length):
-				if(L[k] > A[i]):
-					L[k] = A[i]
-					break
+		else:  # 自分より大きい数値の中で、一番小さいものと置換
+			ind = binarySearch(0, length - 1, A[i], L)
+			L[ind] = A[i]
 	return length
