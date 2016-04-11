@@ -1,7 +1,7 @@
 # 要テスト
 
 # O(n log(n))
-# A が LIS 抜き出すの長さ求めるリスト
+# A が LIS 抜き出すリスト
 
 A = [2,3,1,4]  # original sequence
 
