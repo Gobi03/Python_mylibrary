@@ -14,6 +14,7 @@ def ternarySearch(small, big):
 				return func(small, midr)
 
 		return func(small, big)
+	return func(small, big)
 
 
 # 下に凸のグラフの最小値
@@ -32,3 +33,4 @@ def ternarySearch(small, big):
 				return func(small, midr)
 
 		return func(small, big)
+	return func(small, big)
