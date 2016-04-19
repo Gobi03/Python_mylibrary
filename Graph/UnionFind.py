@@ -1,4 +1,6 @@
-uni = [-1]*v  # 根であれば*そのグループの要素数(負)*が、子であれば親の番号が入る。
+# O(α(n)) << O(log(n))
+
+uni = [-1]*v  # 根であれば *そのグループの要素数(負)* が、子であれば親の番号が入る。
               # 初期値に -1 を入れておく
 			  # v は頂点数
 
@@ -15,7 +17,7 @@ def connect(a, b):
 	# まずはそれぞれ根の番号に置き換える
 	ra = root(a)
 	rb = root(b)
-	if ra == rb:
+	if ra == rb:  # a と b がそもそも同じグループに属しているなら即終了
 		return False
 	
 	# ra を大きなグループにしたいので、逆であれば入れ替える
@@ -23,7 +25,7 @@ def connect(a, b):
 		tmp = ra
 		ra  = rb 
 		rb  = tmp
-		
+
 	# ra と rb を結合し、rb の親を ra とする
 	uni[ra] += uni[rb]
 	uni[rb] = ra

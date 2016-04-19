@@ -1,6 +1,7 @@
-# x^n
+# O(log(n))
+
 MOD = 1000000007
-def repeatSquares(x, n):
+def repeatSquares(x, n):  # x^n
   ans = 1
   while n != 0:
     if n % 2 == 1:
