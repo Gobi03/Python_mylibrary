@@ -1,10 +1,5 @@
 for i in range(10):     # 処理を10回繰り返す(i = 0 ~ 9)
 
-
-for n in [1, 2, 3]:
-  print n                  #=> 1, 2, 3
-for n in (1, 2, 3):
-  print n                  #=> 1, 2, 3
 for k in {'one': 1, 'two': 2, 'three': 3}:
   print k                  #=> one, two, three
 for c in "123":
@@ -18,3 +13,11 @@ for n in [1, 2, 3]:
     print n
 else:
     print 'END'
+
+# enumerate
+list1 = ['a', 'b', 'c']
+for (i, x) in enumerate(list1):
+	print i,x
+0 a
+1 b
+2 c

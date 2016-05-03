@@ -1,10 +1,11 @@
-## 要テスト
-
 # O(E log(V))
 import heapq
 
-edge = [[]]*v  # 頂点 i から行くことができる頂点のリスト
+edge = [0]*v  # 頂点 i から行くことができる頂点のリスト
 dist = makelist(a, b)  # 頂点 a から頂点 b に移動するコスト
+
+for i in range(v):
+	edge[i] = []
 
 # fro から to への最短距離(v は頂点数)
 def dijkstra(fro, to, v):
