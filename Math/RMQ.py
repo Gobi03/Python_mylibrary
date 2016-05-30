@@ -16,12 +16,12 @@ init = ele - 1
 for i in range(init, init + N):
 	seg[i] = int(input())
 
-# fill in its nodes
-nowele = ele // 2
-while start >= 1:
-	for i in range(nowele-1, (nowele-1)+nowele):
+# fill in each nodes
+sp = ele // 2  # start point
+while sp >= 1:
+	for i in range(sp-1, (sp-1)+sp):
 		seg[i] = min(seg[i*2 + 1], seg[i*2 + 2])
-	nowele = nowele // 2
+	sp = sp // 2
 
 ### complete making a RMS
 

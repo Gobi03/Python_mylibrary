@@ -13,7 +13,6 @@ def ternarySearch(small, big):
 			else:
 				return func(small, midr)
 
-		return func(small, big)
 	return func(small, big)
 
 
@@ -32,5 +31,4 @@ def ternarySearch(small, big):
 			else:
 				return func(small, midr)
 
-		return func(small, big)
 	return func(small, big)
