@@ -1,4 +1,5 @@
 # ref: http://www.slideshare.net/iwiwi?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview  p.47
+
 INT_MAX = 2147483647
 
 # 要素数
