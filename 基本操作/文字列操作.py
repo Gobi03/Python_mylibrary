@@ -28,7 +28,3 @@ split(",")  # 引数でsplit
 
 # isSubstring
 a in b   # if a is substring of b, return True
-
-# 文字列を大文字/小文字に変換する
-文字列.upper()
-文字列.lower()
