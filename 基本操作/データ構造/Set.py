@@ -1,6 +1,8 @@
 ## セット(set)
-a = set(['red', 'blue', 'green'])
-b = set(['green', 'yellow', 'white'])
+a = set()
+
+b = set(['red', 'blue', 'green'])
+c = set(['green', 'yellow', 'white'])
 
 # 要素の追加
 a.add('black')
