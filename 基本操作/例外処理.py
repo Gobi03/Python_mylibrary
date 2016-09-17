@@ -6,4 +6,4 @@ while True:
         print "Oops!  That was no valid number.  Try again..."
 
 # throw exception
-raise NameError('HiThere')
+raise NameError('error')
