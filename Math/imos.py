@@ -3,8 +3,8 @@
 imos = [0] * (n+2)
 
 for i in range(n):
-	imos[l[i]] += 1
-	imos[r[i]+1] -= 1
+    imos[l[i]] += 1
+    imos[r[i]+1] -= 1
 
 for i in range(n):
-	imos[i+1] += imos[i]
+    imos[i+1] += imos[i]

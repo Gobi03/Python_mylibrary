@@ -3,13 +3,13 @@
 ### まだコード追えてない
 
 def gcdExt(a, b): # a >= b
-	if b == 0:
-		return (1, 0)
-	else:
-		q = a // b
-		(px, py) = gcdExt(b, a % b)
-		x = py
-		y = px - q * py
-		return (x, y)
+    if b == 0:
+        return (1, 0)
+    else:
+        q = a // b
+        (px, py) = gcdExt(b, a % b)
+        x = py
+        y = px - q * py
+        return (x, y)
 
 print(gcdExt(13, 5))

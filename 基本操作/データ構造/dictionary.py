@@ -8,7 +8,7 @@ d3 = d['Tanaka']
 
 # cons
 if キー not in 辞書オブジェクト:
-	d[キー] = value
+    d[キー] = value
 
 # append
 d.update(連結する辞書オブジェクト)

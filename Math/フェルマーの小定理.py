@@ -6,18 +6,18 @@
 ## a^m ≡ a (mod m) -> a^(m-2) ≡ a^(-1) (mod m) -> a^(-1) ≡ a^(m-2) (mod m)
 
 def fermatLT(a, m):
-	MOD = m
-	def repeatSquares(x, n):  # x^n
-		res = 1
-		while n != 0:
-			if n % 2 == 1:
-				res *= x
-				res %= MOD  # MOD演算ないなら消していい
-			x *= x
-			n //= 2
-			x %= MOD      # MOD演算ないなら消していい
-		return res
+    MOD = m
+    def repeatSquares(x, n):  # x^n
+        res = 1
+        while n != 0:
+            if n % 2 == 1:
+                res *= x
+                res %= MOD  # MOD演算ないなら消していい
+            x *= x
+            n //= 2
+            x %= MOD      # MOD演算ないなら消していい
+        return res
 
-	return repeatSquares(a, m-2) % m
+    return repeatSquares(a, m-2) % m
 
 print(fermatLT(7,29))

@@ -8,21 +8,21 @@ N = 35
 # ele は作るセグツリーの要素数(簡単のため２のべき乗とする)
 ele = 1
 while ele >= N:
-	ele *= 2
+    ele *= 2
 
 ## making a seg tree
 seg = [INT_MAX]*(ele + ele - 1)
 # input
 init = ele - 1
 for i in range(init, init + N):
-	seg[i] = int(input())
+    seg[i] = int(input())
 
 # fill in each nodes
 sp = ele // 2  # start point
 while sp >= 1:
-	for i in range(sp-1, (sp-1)+sp):
-		seg[i] = min(seg[i*2 + 1], seg[i*2 + 2])
-	sp = sp // 2
+    for i in range(sp-1, (sp-1)+sp):
+        seg[i] = min(seg[i*2 + 1], seg[i*2 + 2])
+    sp = sp // 2
 
 ### complete making a RMS
 
@@ -31,14 +31,14 @@ while sp >= 1:
 # O(log(N))
 # using as query(a, b, 0, 0, ele)
 def query(a, b, k, l, r):
-	# [a, b)に[l, r)が含まれない
-	if r <= a or l >= b:
-		return INT_MAX
+    # [a, b)に[l, r)が含まれない
+    if r <= a or l >= b:
+        return INT_MAX
 
-	# [a, b)が[l, r)を完全に含むか
-	if (a <= l and b >= r):
-		return seg[k]
-	else:
-		vl = query(a, b, k*2+1, l,        (l+r)//2)
-		vr = query(a, b, k*2+2, (l+r)//2, r       )
-		return min(vl, vr)
+    # [a, b)が[l, r)を完全に含むか
+    if (a <= l and b >= r):
+        return seg[k]
+    else:
+        vl = query(a, b, k*2+1, l,        (l+r)//2)
+        vr = query(a, b, k*2+2, (l+r)//2, r       )
+        return min(vl, vr)
