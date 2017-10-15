@@ -7,12 +7,10 @@
 len([1, 2, 3])           #=> 3
 # map
 list(map(f, a))       # not destructive
-                      # a = [1, 2, 3], f = lambda x: x * 2
+                      # ex) a = [1, 2, 3], f = lambda x: x * 2
 # delete
 del a[i]    # i番目の要素を削除
 
-# 内包表記
-[x * 2 for x in a]            #=> [2, 4, 6] : 内包表記
 # filter
 a = [1, 2, 3]
 print filter(lambda x: x % 2, a)
@@ -25,9 +23,9 @@ print reduce(lambda x, y: x + y, a) #=> 15 : lambda方式
 elm = a.pop()              # リストの末尾から要素を1つ取り出す
 elm = a.pop(0)             # 引数にリストのインデックスを取り、その要素を取り出す
                            # => a = [2,3,4,5]   elm = 1
-# put
+
 [1, 2, 4].insert(2, 3)     # => [1, 2, 3, 4]
-# remove
+
 a.remove(13)               # 引数のオブジェクトのうちリストの先頭に最も近いもの一つだけ削除する   [13, 5, 13].remove(13) => [5, 13]
 
 # sort
