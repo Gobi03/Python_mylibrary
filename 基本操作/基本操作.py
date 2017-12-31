@@ -1,5 +1,3 @@
-sum(range(n+1))   # 1 ~ n の
-
 import math
 
 round(answer, 3)   # 四捨五入 小数点第3位まで表示
