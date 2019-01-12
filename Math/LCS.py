@@ -6,12 +6,13 @@ def makelist(n, m):
 
 # str * str -> int
 def solve(s, t):
-    # 何文字目かで index (offset=1)
-    dp = makelist(len(s)+1, len(t)+1)
-    for i in range(len(s)):
-        for j in range(len(t)):
-            if s[i] == t[j]:
-                dp[i+1][j+1] = dp[i][j] + 1
+    dp = makelist(len(s)+1, len(t)+1) # 何文字目かで index (offset=1)
+    
+    for i in range(1, len(s)+1):
+        for j in range(1, len(t)+1):
+            if s[i-1] == t[j-1]:
+                dp[i][j] = dp[i-1][j-1] + 1
             else:
-                dp[i+1][j+1] = max(dp[i+1][j], dp[i][j+1])
+                dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+
     return dp[len(s)][len(t)]
