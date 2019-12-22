@@ -8,3 +8,5 @@ heapq.heappush(pq, 2) # 2をpush
 heapq.heappop(pq)
 
 not pq  # 空判定
+
+pq.clear() # reset
